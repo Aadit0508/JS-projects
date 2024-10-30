@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5a2dac;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.cont {
+    background-color: #5a2dac;
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f5e4ff;
+    text-align: center;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#enter {
+    width: 350px;
+    height: 50px;
+    padding: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+    background-color: #ffbd59;
+    border: none;
+    color: #4b2a02;
+    font-size: 1em;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#enter:focus {
+    outline: none;
+    background-color: #ffde8f;
+}
+
+#search, #Show {
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 5px;
+    background-color: #5757ec;
+    color: whitesmoke;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+#search:hover, #Show:hover {
+    background-color: #4343d5;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.showmore {
+    background-color: #5a2dac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 90vw;
+    padding: 20px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.results img {
+    width: 100%;
+    height: 350px;
+    max-width: 350px;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.results img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
